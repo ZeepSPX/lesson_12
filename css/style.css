@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+[class*="__container"] {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: "Comfortaa", cursive;
+	font-weight: 400;
+	background-color: #f5f5dc;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	padding: 50px;
+}
+
+.section__container {
+	height: 1000px;
+	border-style: solid;
+}
+
+.section__back-end {
+	perspective: 100px;
+	perspective-origin: 0 0;
+}
+
+.section__fonts {
+	position: static;
+	height: 1000px;
+	background: url("../img/fonts.jpg") 0 0 / cover no-repeat;
+}
+
+.section__fontan {
+	position: relative;
+	height: 1000px;
+	margin-top: -1000px;
+	background: url("../img/fontan.png") 0 0 / cover no-repeat;
+	z-index: 3;
+}
+
+.section__image-colosus {
+	position: relative;
+	width: 1304px;
+	height: 1800px;
+	margin-top: -1800px;
+	margin-left: 200px;
+	background: url("../img/colosus.png") 0 0 / cover no-repeat;
+	z-index: 1;
+}
+
+.section__cloud {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin-top: -1000px;
+	margin-left: 500px;
+	background: url("../img/cloud.png") 0 0 / cover no-repeat;
+	transform: scale(3);
+	transition: 3s;
+	z-index: 2;
+}
+
+.section__cloud:hover {
+	opacity: 0;
+	transition: 5s;
+}
+
+.section__lightning-one {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background: url("../img/lightning.png") 0 0 / cover no-repeat;
+	transform: translate3d(10px, 20px, -15px);
+	z-index: 5;
+}
+
+.section__lightning-one:hover {
+	transform-origin: center;
+	transform: rotate(10deg);
+	transition: 5s;
+}
+
+.section__lightning-two {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin-left: 550px;
+	background: url("../img/lightning.png") 0 0 / cover no-repeat;
+	transform: translate3d(10px, 20px, -105px);
+	z-index: 5;
+}
+
+.section__lightning-two:hover {
+	transform: scale3d(1, 2, 3);
+	transform: rotate3d(1, 1, 1, 40deg);
+	transition: 5s;
+}
+
+.section__first-text {
+	position: absolute;
+	width: 554px;
+	height: 256px;
+	margin-top: -1500px;
+	border-style: solid;
+	z-index: 3;
+}
+
+.section__fonts-text {
+	position: relative;
+	width: 550px;
+	height: 250px;
+	background: url("../img/sky_day.jpg") 0 0 / cover no-repeat;
+	z-index: 3;
+}
+
+.section__image-first {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background: url("../img/left_face.png") 0 0 / cover no-repeat;
+	transform: translate(300px);
+	margin-top: -250px;
+	z-index: 3;
+}
+
+.section__text {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #f5f5dc;
+	font-size: 30px;
+	margin-top: -220px;
+	padding-left: 25px;
+	z-index: 3;
+}
+
+.section__second-text {
+	position: absolute;
+	width: 554px;
+	height: 256px;
+	margin-top: -800px;
+	margin-left: 650px;
+	z-index: 3;
+}
+
+.section__heros {
+	position: absolute;
+	width: 150px;
+	height: 450px;
+	margin-top: -600px;
+	margin-left: 100px;
+	background: url("../img/hero.png") 0 0 / cover no-repeat;
+	transform: skew(-10deg, 10deg);
+	z-index: 4;
+}
+
+.section__warning {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-left: 190px;
+	margin-top: -490px;
+	transform: rotate(20deg);
+	background: url("../img/icons/warning.png") 0 0 / cover no-repeat;
+	z-index: 4;
+}
+
+.section__text--margin {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #f5f5dc;
+	font-size: 30px;
+	padding-top: 200px;
+	padding-left: 25px;
+	z-index: 5;
+}
+
+.section__three-text {
+	position: absolute;
+	width: 750px;
+	height: 250px;
+	margin-top: -810px;
+	margin-left: 400px;
+	border-style: solid;
+	z-index: 4;
+}
+.section__fonts-text--wigth {
+	position: relative;
+	width: 745px;
+	height: 250px;
+	background: url("../img/sky_day.jpg") 0 0 / cover no-repeat;
+	z-index: 3;
+}
+.section__image-second {
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	margin-left: 260px;
+	margin-top: -250px;
+	background: url("../img/colosus_face.png") 0 0 / cover no-repeat;
+	z-index: 4;
+}
+
+.section__decoration {
+	width: 500px;
+	height: 500px;
+	margin-left: 1050px;
+	margin-top: -1100px;
+	perspective: 100px;
+	transform-style: preserve-3d;
+}
+
+.section__lightning-three {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background: url("../img/lightning.png") 0 0 / cover no-repeat;
+	transform: rotateY(180deg);
+	transition: all 0.3s ease 0s;
+	z-index: 5;
+}
+
+.section__decoration:hover .section__lightning-three {
+	transform: rotateY(0deg);
+}
